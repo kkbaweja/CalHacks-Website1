@@ -1,0 +1,44 @@
+
+body, html {
+    height: 100%;
+        background: url("http://johnsoneye.com/wp-content/uploads/2013/11/ss4.jpg")no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* The hero image */
+.bg{
+    /* The image used */
+    background-image: url("http://johnsoneye.com/wp-content/uploads/2013/11/ss4.jpg");
+    height: 100%;
+    /* Set a specific height */
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+       background-size: cover;
+}
+
+.container {
+    height: 100%;
+    align-items: center;
+}
+
+.my-icon {
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.my-text {
+    font-family: "Courier-new";
+}
+
+.my-fancy-container {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    margin: 60px;
+
+}

@@ -17,14 +17,15 @@ http.createServer(function(request,response){
 		case '/food':
 			getFile(response, 'public/food.html', 'text/html');
 			break;
-		case '/common injuries':
-			getFile(response, 'public/common injuries.html', 'text/html');
+		case '/injuries':
+			getFile(response, 'public/injuries.html', 'text/html');
 			break;
 		case '/forum':
 			getFile(response, 'public/forum.html', 'text/html');
 			break;
 		default:
-			response.writeHead();
+			response.writeHead(404, {'Content-Type':'text/plain'});
+			response.end('404 - Page not found.');
 	}
 }).listen(8080);
 console.log('server is running at 8080');
